@@ -7,9 +7,10 @@ import random
 suits = ['Hearts','Spades','Clubs','Diamonds']
 ranks = ['Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Jack','Queen','King','Ace']
 values = {'Two':2,'Three':3,'Four':4,'Five':5,'Six':6,'Seven':7,'Eight':8,'Nine':9,'Ten':10,'Jack':10,'Queen':10,
-        'King':10,'Ace':11}
-def SmallBlackJack():
+    'King':10,'Ace':11}
 
+def main():
+    
     # Reset everything in the game: clear the cards, distribute the chips,
     def reset_match():
         for player in [dealer,player1]:
@@ -319,8 +320,6 @@ def SmallBlackJack():
         
 
 if __name__=="__main__":
-    SmallBlackJack()
+    main()
 else:
-    print("This is a Main File!")     
-    
-
+    print("This is a Main File!")
